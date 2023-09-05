@@ -334,6 +334,9 @@ a{
   background-color: #2b3941;
   transition: 0.3s;
   cursor: pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .icon {
