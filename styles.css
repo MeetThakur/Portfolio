@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
 
-html { 
+html{ 
     scroll-behavior: smooth;
 }
 
+
+
 body{
-  background: linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
+  background: linear-gradient(180deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
   min-height: 100vh;
   background-attachment: fixed;
   padding: 0;
   margin: 0;
 }
+
+
+
 
 #navbar{
   min-height: 10vh;
@@ -56,12 +55,11 @@ body{
 }
 
 .navbtn a:hover{
-  border-bottom: 1px solid #ffa640;
+  border-bottom: 1px solid #ef4444;
   padding-bottom: 3px;
-  color: #ffa640;
+  color: #ef4444;
   transform: translate(0px,0px)
 }
-
 
 
 
@@ -85,7 +83,7 @@ body{
 
 
 #main div{
-  width: 50%;
+  width: 45%;
 }
 
 #main div:nth-child(2){
@@ -102,7 +100,7 @@ body{
 #main p:nth-child(2){
   color: white;
   font-family:'unbounded',cursive;
-  font-size: 3vw;
+  font-size: 2.7vw;
 }
 
 
@@ -173,17 +171,6 @@ body{
   padding-left: 0;
   margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -334,9 +321,6 @@ a{
   background-color: #2b3941;
   transition: 0.3s;
   cursor: pointer;
-  display:flex;
-  justify-content:center;
-  align-items:center;
 }
 
 .icon {
@@ -372,6 +356,7 @@ a{
   top: -35px;
   left: 0;
 }
+
 
 
 
@@ -429,7 +414,7 @@ a{
 
 
 
-@media (max-width:600px){
+@media (max-width:900px){
   #navbar{
     padding-left: 30px;
     padding-right: 30px;
