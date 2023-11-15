@@ -321,11 +321,12 @@ a{
 }
 
 .container button {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border: none;
   background-color: #2b3941;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .icon {
@@ -363,7 +364,11 @@ a{
 }
 
 
-
+button{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
 
 
 @media (max-width:950px){
