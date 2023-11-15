@@ -5,6 +5,7 @@
 
 html{ 
     scroll-behavior: smooth;
+    cursor: url('Images/cursor.png'), auto;
 }
 
 
@@ -15,6 +16,11 @@ body{
   background-attachment: fixed;
   padding: 0;
   margin: 0;
+}
+
+
+a, button, input {
+  cursor: url('Images/tap.png'), pointer;
 }
 
 
@@ -320,7 +326,6 @@ a{
   border: none;
   background-color: #2b3941;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .icon {
