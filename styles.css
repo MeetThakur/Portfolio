@@ -3,25 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
 
-html{ 
+html { 
     scroll-behavior: smooth;
-    cursor: url('Images/cursor.png'), auto;
 }
-
-
 
 body{
-  background: linear-gradient(180deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
-  min-height: 100vh;
-  background-attachment: fixed;
-  padding: 0;
-  margin: 0;
+  	background: linear-gradient(180deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
+  	min-height: 100vh;
+  	background-attachment: fixed;
+  	padding: 0;
+  	margin: 0;
 }
 
-
-a, button, input {
-  cursor: url('Images/tap.png'), pointer;
+#trailer{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: relative; 
+  z-index: 9;
+  border-radius: 50%;
+  transition: all cubic-bezier(0.19,1,0.22,1) 0.7s;
 }
+
 
 
 
@@ -61,11 +64,12 @@ a, button, input {
 }
 
 .navbtn a:hover{
-  border-bottom: 1px solid #ef4444;
+  border-bottom: 1px solid #ffa640;
   padding-bottom: 3px;
-  color: #ef4444;
+  color: #ffa640;
   transform: translate(0px,0px)
 }
+
 
 
 
@@ -83,7 +87,7 @@ a, button, input {
 }
 
 #main img{
-  width: 35vw;
+  width: 25vw;
   filter: drop-shadow(7px 7px 7px black);
 }
 
@@ -177,6 +181,17 @@ a, button, input {
   padding-left: 0;
   margin-top: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -321,12 +336,12 @@ a{
 }
 
 .container button {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border: none;
   background-color: #2b3941;
   transition: 0.3s;
-  border-radius: 10px;
+  cursor: pointer;
 }
 
 .icon {
@@ -364,11 +379,6 @@ a{
 }
 
 
-button{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
 
 
 @media (max-width:950px){
@@ -424,7 +434,7 @@ button{
 
 
 
-@media (max-width:900px){
+@media (max-width:600px){
   #navbar{
     padding-left: 30px;
     padding-right: 30px;
@@ -441,8 +451,7 @@ button{
 
   #main div img{
     padding-bottom: 10px;
-    width: 80%;
-      
+    width: 70%;
   }
 
   #main div:nth-child(1){
