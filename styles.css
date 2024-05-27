@@ -16,16 +16,15 @@ body{
 }
 
 #trailer{
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: white;
-  position: relative; 
-  z-index: 9;
+  position: absolute;
+  z-index: 0;
   border-radius: 50%;
   transition: all cubic-bezier(0.19,1,0.22,1) 0.7s;
+  pointer-events: none;
 }
-
-
 
 
 
@@ -75,7 +74,9 @@ body{
 
 
 
-
+h1,p{
+	position: relative;
+}
 #main{
   padding-right: 100px;
   padding-left: 100px;
@@ -83,7 +84,8 @@ body{
   align-items: center;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
-  min-height: 90vh;
+  min-height: 100vh;
+  opacity: 1;
 }
 
 #main img{
@@ -443,7 +445,9 @@ a{
     gap: 20px;
   }
 
-
+  #skills{
+    padding: 10px;
+  }
   #main{
     padding: 30px;
     padding-bottom: 100px;
@@ -487,7 +491,7 @@ a{
   }
 
   #skills{
-    padding: 30px;
+    margin: 30px;
     padding-bottom: 100px;
   }
   .skill-d div{
