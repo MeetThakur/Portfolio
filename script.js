@@ -1,22 +1,42 @@
 var trailer = document.querySelector('#trailer');
-var x,y,scroll;
+var x,y,scrol;
+
+gsap.registerPlugin(ScrollTrigger) 
+
+gsap.from('#main', {
+	duration: 3,
+	opacity: 0,
+	y : 50,
+	ease:"expo",
+});
+
+gsap.from('#skills', {
+	scrollTrigger: ".skill-d",
+	duration: 3,
+	opacity: 0,
+	y : 50,
+	ease:"expo",
+});
+
 
 function mouseTrailer() {
 	window.addEventListener('mousemove', function(event) {;
-	scroll = window.scrollY;
+	scrol = window.scrollY;
 	x = event.clientX;
 	y = event.clientY;
-	trailer.style.transform = `translate(${event.clientX - 15}px, ${event.clientY -15 + scroll}px)`;
+	trailer.style.transform = `translate(${event.clientX - 10}px, ${event.clientY -10 + scrol}px)`;
 })
 }
 
 function scrollTrailer() {
 	window.addEventListener('scroll', function(event) {
-		scroll = window.scrollY;
-		trailer.style.transform = `translate(${x - 15}px, ${y -15 + scroll}px)`;
+		scrol = window.scrollY;
+		trailer.style.transform = `translate(${x - 15}px, ${y -15 + scrol}px)`;
 	})
 }
 
 scrollTrailer()
 mouseTrailer();
+
+
 
