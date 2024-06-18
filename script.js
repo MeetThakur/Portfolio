@@ -4,20 +4,35 @@ var x,y,scrol;
 gsap.registerPlugin(ScrollTrigger) 
 
 gsap.from('#main', {
-	duration: 3,
+	duration: 1,
 	opacity: 0,
-	y : 50,
+	y : 250,
 	ease:"expo",
 });
 
-gsap.from('#skills', {
+gsap.from('#s1', {
+	scrollTrigger: ".skill-d", 
+	duration: 1,
+	opacity: 0,
+	y : 300,
+	ease:"expo",
+});
+
+gsap.from('#s2', {
 	scrollTrigger: ".skill-d",
-	duration: 3,
+	delay: 1,
+	duration: 1,
 	opacity: 0,
-	y : 50,
+	y : 300,
 	ease:"expo",
 });
 
+gsap.from('.cards', {
+	scrollTrigger: ".tags",
+	duration: 1,
+	x: -window.innerWidth,
+	ease: "expo",
+});
 
 function mouseTrailer() {
 	window.addEventListener('mousemove', function(event) {;
