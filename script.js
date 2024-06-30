@@ -31,7 +31,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 gsap.from('#s1', {
 	scrollTrigger: {
-		markers: true,
 		trigger: '#s1',
 		start: 'top 60%',
 	},
@@ -41,7 +40,6 @@ gsap.from('#s1', {
 
 gsap.from('#s2', {
 	scrollTrigger: {
-		markers: true,
 		trigger: '#s2',
 		start: 'top 60%',
 	},
@@ -51,7 +49,6 @@ gsap.from('#s2', {
 
 gsap.from('.cards', {
 	scrollTrigger: {
-		markers: true,
 		trigger: '.cards',
 		start: 'top 70%',
 	},
